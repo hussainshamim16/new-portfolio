@@ -1,0 +1,1179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+
+
+* {
+   margin: 0px;
+   padding: 0px;
+
+   color: white;
+
+   font-family: 'Josefin Sans';
+}
+
+body {
+
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 56, 14, 0.9), rgba(0, 0, 0, 0.9)), url('./images/background\ img.png');
+
+
+   background-repeat: no-repeat;
+   position: relative;
+   background-size: cover;
+
+
+
+}
+
+#click {
+   display: none;
+}
+
+:root {
+   --mangogreen: #58ff58;
+   --havygreen: #00e700;
+   --lightgreen: #00af00;
+   --darkgreen: #003500;
+   --extraDarkgreen: #001f00;
+}
+
+
+
+div.boxer {
+
+
+   background-color: var(--havygreen);
+
+   position: absolute;
+   height: 80vh;
+   width: 50%;
+
+   padding: 10px 30px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+   line-height: 3;
+
+   font-size: 26px;
+   font-weight: 700;
+
+   border-radius: 0px 20px 80px 0px;
+
+   animation-name: nav;
+   animation-duration: 0.6s;
+   animation-delay: 0s;
+
+   display: none;
+}
+
+@keyframes nav {
+   0% {
+      width: 0%
+   }
+
+
+   100% {
+      width: 50%
+   }
+
+}
+
+
+div.boxer ul {
+   list-style-type: none;
+
+}
+
+div.boxer ul a {
+   text-transform: capitalize;
+   color: black;
+   text-decoration: none;
+}
+
+
+nav {
+   background-color: var(--extraDarkgreen);
+   height: 15vh;
+
+   padding: 2px 20px;
+   /* border: 1px solid blue; */
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+div.boxer {
+   display: none;
+}
+
+nav .logo {
+   font-size: 30px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   font-weight: bolder;
+}
+
+nav .logo .logoGreen {
+   color: var(--havygreen);
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   list-style: none;
+}
+
+nav ul li {
+   margin-right: 20px;
+}
+
+nav a {
+   font-size: 14px;
+   text-decoration: none;
+   text-transform: capitalize;
+
+
+   padding: 10px 20px;
+   border-radius: 20px;
+
+   transition-duration: 0.8s;
+   transition-delay: 0s;
+}
+
+
+nav li a:hover {
+   background-color: var(--havygreen);
+   color: black;
+   box-shadow: 0px 0px 10px 1px #00e700af;
+   ;
+}
+
+nav li a.active {
+   background-color: var(--havygreen);
+   color: black;
+   box-shadow: 0px 0px 10px 1px #00e700af;
+   ;
+}
+
+section.twosec {
+   /* border: 10px solid red; */
+   height: 60vh;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+div.icons {
+   text-align: center;
+   /* border: 2px solid red; */
+   margin-bottom: 35px;
+}
+
+div.icons i {
+   font-size: 30px;
+   color: white;
+   margin-right: 20px;
+   cursor: pointer;
+
+   transition-duration: 0.6s;
+   transition-delay: 0s;
+}
+
+div.icons i:hover {
+   text-shadow: 0px 0px 20px var(--havygreen);
+   color: var(--darkgreen);
+
+}
+
+.twosec .main {
+   /* border: 2px solid red; */
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.twosec .main .image img {
+   width: 250px;
+   border-radius: 200px;
+
+   cursor: pointer;
+   /* border: 7px solid darkgreen; */
+
+   transition-duration: 0.6s;
+   transition-delay: 0s;
+}
+
+.twosec .main .image img:hover {
+   opacity: 0.7;
+   box-shadow: 0px 0px 20px 10px #00e700af;
+   ;
+}
+
+
+
+.twosec .main h1 {
+   font-size: 50px;
+
+}
+
+.twosec .main p {
+   width: 400px;
+line-height: 1.4;
+   margin-top: 10px;
+   margin-bottom: 30px;
+
+}
+
+.twosec .main a {
+   border-radius: 20px;
+   background-color: var(--lightgreen);
+
+   color: black;
+   text-decoration: none;
+   text-transform: lowercase;
+   font-weight: 600;
+
+   padding: 15px 30px;
+
+
+   transition-duration: 0.4s;
+   transition-delay: 0s;
+
+}
+
+.twosec .main a:hover {
+   background-color: var(--havygreen);
+   box-shadow: 0px 0px 10px 1px #00e700af;
+   ;
+}
+
+/* ----/ */
+
+section.three {
+   width: auto;
+   height: auto;
+   margin-bottom: 30px;
+}
+
+section.three .button {
+   /* border: 2px solid  red; */
+   /* width: auto; */
+   height: auto;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+section.three .button .box:hover {
+   background-color: var(--havygreen);
+   box-shadow: 0px 0px 10px 10px #00e70077;
+   ;
+}
+
+section.three .button .box {
+   width: 40%;
+   margin-bottom: 20px;
+   /* border: 2px solid black; */
+   height: 40vh;
+   margin-bottom: 50px;
+
+   -webkit-backdrop-filter: blur(10);
+   border-radius: 30px;
+
+
+   transition-duration: 0.4s;
+   transition-delay: 0s;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   padding: 10px;
+
+}
+
+section.three .button .box:first-child {
+
+   background-color: var(--darkgreen);
+   width: 50%;
+}
+
+section.three .button .box:nth-of-type(4) {
+
+   background-color: var(--darkgreen);
+   width: 50%;
+}
+
+section.three .button .box .images i {
+   width: 150px;
+   color: white;
+   margin-left: 20px;
+   font-size: 90px;
+
+   transition-duration: 0.4s;
+   transition-delay: 0s;
+}
+
+section.three .button .box .images i:hover {
+   width: 150px;
+   color: black;
+   margin-left: 20px;
+   font-size: 105px;
+}
+
+
+section.three .button .box .text h1 {
+   font-size: 25px;
+}
+
+section.three .button .box .text p {
+   font-size: 13px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   line-height: 1.4;
+}
+
+section.three .button .box .text a {
+   color: white;
+   padding: 10px 20px;
+   border-radius: 20px;
+   font-size: 10px;
+   text-decoration: none;
+   background-color: black;
+}
+
+section.blackN {
+   background-color: rgba(0, 0, 0, 0.747);
+   margin-top: 50px;
+   margin-bottom: 30px;
+
+   padding: 30px 10px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   text-align: center;
+
+}
+
+section.blackN h1 {
+   color: var(--havygreen);
+   font-size: 30px;
+}
+
+section.blackN p {
+
+   font-size: 13px;
+   width: 200px;
+   line-height: 1.2;
+}
+
+section.blackN .pera {
+   color: white;
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+
+/* __ */
+
+section.about {
+   /* border: 1px solid red; */
+   padding: 20px;
+
+   margin-bottom: 80px;
+
+
+
+}
+
+section.about .abdeataile {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+section.about .abdeataile .text {
+   /* border: 2px solid green; */
+   width: 50%;
+   text-align: center;
+   padding: 10px 20px;
+}
+
+section.about .abdeataile .text sub {
+   font-size: 30px;
+}
+
+section.about .abdeataile .text h1 {
+   font-size: 50px;
+   color: var(--havygreen);
+
+}
+
+section.about .abdeataile .text p {
+   font-size: 16px;
+line-height: 1.4;
+
+   /* text-align: center; */
+   /* border: 1px solid red; */
+
+   margin-bottom: 30px;
+}
+
+section.about .abdeataile .text a {
+   border-radius: 20px;
+   background-color: var(--lightgreen);
+
+   color: black;
+   text-decoration: none;
+   text-transform: lowercase;
+   font-weight: 600;
+
+   padding: 15px 30px;
+
+
+   transition-duration: 0.4s;
+   transition-delay: 0s;
+
+}
+
+section.about .abdeataile .text a:hover {
+   background-color: var(--havygreen);
+   box-shadow: 0px 0px 10px 1px #00e700af;
+   ;
+}
+
+section.about .abdeataile .imgae {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+section.about .abdeataile .imgae img {
+   width: 25%;
+   border-radius: 150px;
+   box-shadow: 0px 0px 20px 2px #00e700af;
+   ;
+   margin-bottom: 30px;
+}
+
+/* ----------- */
+
+section.portfolio {
+
+
+   width: auto;
+   height: auto;
+
+   margin-bottom: 50px;
+
+
+
+}
+
+
+section.portfolio .text {
+   text-align: center;
+}
+
+section.portfolio .text h1 {
+   font-size: 40px;
+   text-transform: uppercase;
+   cursor: pointer;
+
+   margin-bottom: 40px;
+   color: var(--havygreen);
+
+}
+
+section.portfolio .text h1 span {
+   color: white;
+}
+
+
+section.portfolio .boxes {
+
+
+   line-height: 100px;
+
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+section.portfolio .boxes a {
+   /* border: 1px solid red; */
+   width: 45%;
+
+
+
+}
+
+section.portfolio .boxes img {
+   width: 100%;
+   border-radius: 20px;
+
+   transition-duration: 0.2s;
+   transition-delay: 0.1s;
+
+}
+
+section.portfolio .boxes img:hover {
+   opacity: 0.6;
+   box-shadow: 0px 0px 20px 5px var(--havygreen);
+}
+
+
+/* .. */
+
+section.feedbacks {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   margin-bottom: 30px;
+}
+
+
+/* swiper */
+.slider {
+   position: relative;
+   height: 100%;
+}
+
+.slider {
+
+   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000;
+   margin: 0;
+   padding: 0;
+}
+
+.slider {
+
+   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000;
+   margin: 0;
+   padding: 0;
+}
+
+
+.slider {
+   position: relative;
+   height: 100%;
+}
+
+.slider {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+swiper-container {
+   width: 240px;
+   height: 320px;
+
+
+}
+
+swiper-slide {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 18px;
+
+   color: black;
+   font-weight: bold;
+
+   background-color: var(--havygreen);
+
+   
+}
+
+swiper-slide img {
+   width: 50%;
+   margin-bottom: 10px;
+   border-radius: 50px;
+}
+
+swiper-slide h1 {
+   color: #000;
+}
+
+swiper-slide p {
+   color: #000;
+}
+
+swiper-slide h3 {
+   color: #000;
+}
+
+swiper-slide hr {
+   color: #000;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+
+
+section.feedbacks .text {
+   /* border: 1px solid red; */
+   background-color: var(--darkgreen);
+   border-radius: 20px;
+   padding: 20px;
+}
+
+section.feedbacks .text h1 {
+   color: var(--havygreen);
+   font-size: 30px;
+}
+
+section.feedbacks .text p {
+   width: 100%;
+
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+
+section.feedbacks .text a {
+   border-radius: 20px;
+   background-color: var(--lightgreen);
+
+   color: black;
+   text-decoration: none;
+   text-transform: lowercase;
+   font-weight: 600;
+
+   padding: 10px 30px;
+
+
+   transition-duration: 0.4s;
+   transition-delay: 0s;
+
+}
+
+section.feedbacks .text a:hover {
+   background-color: var(--havygreen);
+   box-shadow: 0px 0px 10px 1px #00e700af;
+}
+
+section.foter {
+   background-color: var(--extraDarkgreen);
+   padding: 10px 20px;
+   text-align: center;
+
+}
+
+
+section.foter p {
+   font-size: 20px;
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   body {
+      background-color: #000;
+   }
+
+   nav i {
+      font-size: 40px;
+
+   }
+
+   nav ul {
+      display: none;
+   }
+
+   #click {
+      display: flex;
+   }
+
+   .twosec .main {
+      flex-direction: column-reverse;
+      text-align: center;
+   }
+
+   .twosec .main .image img {
+      width: 200px;
+      margin-bottom: 30px;
+      margin-top: 20px;
+   }
+
+   .twosec .main p {
+      font-size: 13px;
+      width: auto;
+   }
+
+   .twosec .main h1 {
+      font-size: 40px;
+   }
+
+   .twosec .main a {
+      padding: 12px 30px;
+   }
+
+   div.icons i {
+      margin-bottom: 30px;
+      margin-top: 40px;
+   }
+
+   section.three .button {
+      flex-direction: column;
+      width: auto;
+
+
+   }
+
+   section.three .button .box {
+      width: 60%;
+      flex-direction: column;
+      padding: 10px 20px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      margin-right: 0px;
+      margin-left: 0px;
+   }
+
+
+   section.three .button .box:first-child {
+
+      background-color: var(--darkgreen);
+      width: 60%;
+      padding: 10px 20px;
+   }
+
+   section.three .button .box:nth-of-type(4) {
+
+      background-color: var(--darkgreen);
+      width: 60%;
+      padding: 10px 20px;
+   }
+
+   section.blackN {
+
+      padding: 10px;
+   }
+
+   section.blackN h1 {
+      color: var(--havygreen);
+      font-size: 20px;
+   }
+
+   section.blackN p {
+
+      font-size: 8px;
+      width: 90px;
+   }
+
+   section.blackN .pera {
+      color: white;
+      margin-bottom: 10px;
+      font-size: 15px;
+   }
+
+   section.about {
+      padding: 10px;
+   }
+
+   section.about .abdeataile .text {
+      width: auto;
+   }
+
+
+   section.about .abdeataile .text sub {
+      font-size: 20px;
+   }
+
+   section.about .abdeataile .text h1 {
+      font-size: 40px;
+      color: var(--havygreen);
+
+   }
+
+   section.about .abdeataile .text p {
+      font-size: 13px;
+      margin-bottom: 30px;
+   }
+
+   section.about .abdeataile .imgae img {
+      width: 30%;
+   }
+
+
+   section.portfolio .boxes a {
+      width: 80%;
+   }
+
+   section.portfolio .boxes {
+
+
+      line-height: 100px;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+
+   section.feedbacks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+   }
+
+   .slider {
+      margin-bottom: 50px;
+   }
+
+   swiper-container {
+      width: 190px;
+      height: 300px;
+
+
+   }
+
+   section.feedbacks .text {
+      width: 80%;
+   }
+   section.feedbacks .text p{
+      width: 100%;
+   }
+
+   section.foter p {
+      font-size: 100%;
+   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+   #click {
+      display: flex;
+   }
+
+   
+   nav i {
+      font-size: 40px;
+
+   }
+
+   nav ul {
+      display: none;
+   }
+
+   .twosec .main .image img {
+      width: 200px;
+   }
+
+   .twosec .main h1 {font-size: 40px;}
+   .twosec .main p {font-size: 12px; width: 300px;}
+   .twosec .main a {font-size: 14px; padding: 10px 20px;}
+
+
+   section.three .button .box {
+      flex-direction: column;
+      width: 35%;
+   }
+   section.three .button .box:first-child {
+
+      background-color: var(--darkgreen);
+      width: 45%;
+   }
+   
+   section.three .button .box:nth-of-type(4) {
+   
+      background-color: var(--darkgreen);
+      width: 45%;
+   }
+
+   section.three .button .box .images i {
+      font-size: 60px;
+      text-align: center;
+      
+   }
+
+   section.three .button .box .text h1 {
+      font-size: 20px;
+   }
+   
+   section.three .button .box .text p {
+      font-size: 8px;
+      
+      margin-bottom: 10px;
+      line-height: 1.4;
+   }
+   
+   section.three .button .box .text a {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 10px;
+      text-decoration: none;
+      background-color: black;
+   }
+
+   section.blackN h1 {
+      font-size: 25px;
+   }
+   section.blackN p {
+
+      font-size: 10px;
+      width: 160px;
+   }
+
+
+   section.about .abdeataile .text {
+      
+      width: 90%;
+      
+   }
+
+   section.feedbacks {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column-reverse;
+   
+      margin-bottom: 30px;
+   }
+
+   swiper-container {
+      width: 250px;
+      height: 350px;
+   margin-bottom: 30px;
+   
+   }
+   
+
+   } 
+
+
+   /* For mobile devices */
+@media only screen and (max-width: 600px) {
+   /* Styles for mobile devices */
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+   /* Styles for tablets */
+}
+
+/* For laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+   /* Styles for laptops */
+}
+
+/* For desktops */
+@media only screen and (min-width: 1441px) {
+
+nav{
+   padding: 3px 30px;
+}
+
+   nav a {
+      font-size: 30px;
+      padding:15px 30px;
+   }
+   nav .logo {
+      font-size: 50px;
+   }
+   .twosec .main {
+      justify-content: space-around;
+      
+   }
+   .twosec .main .image img {
+      width: 450px;
+   border-radius: 300px;
+   }
+
+   .twosec .main h1 {
+      font-size: 80px;
+   }
+   .twosec .main p {
+width:700px;
+font-size: 25px;
+   }
+   .twosec .main a {
+font-size: 30px;
+   }
+   div.icons i {
+      font-size: 60px;
+      margin-right: 40px;
+      margin-bottom: 80px;
+   }
+
+   section.three .button .box .images i {
+      font-size: 150px;
+      margin-right: 80px;
+   }
+
+   section.three .button .box .images i:hover {
+      
+      font-size: 165px;
+   }
+
+   section.three .button .box .text h1 {
+      font-size: 50px;
+   }
+   
+   section.three .button .box .text p {
+      font-size: 30px;
+    
+   }
+   
+   section.three .button .box .text a {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 27px;
+      text-decoration: none;
+      background-color: black;
+   }
+
+   section.blackN h1 {
+      color: var(--havygreen);
+      font-size: 70px;
+   }
+   
+   section.blackN p {
+   
+      font-size: 30px;
+      width: 400px;
+      
+   }
+   
+   section.blackN .pera {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 40px;
+   }
+
+   /* ---= */
+   
+section.about .abdeataile .text sub {
+   font-size: 50px;
+}
+
+section.about .abdeataile .text h1 {
+   font-size: 100px;
+
+
+}
+
+section.about .abdeataile .text p {
+   font-size: 32px;
+
+
+}
+
+section.about .abdeataile .text a {
+  
+
+   font-size: 50px;
+
+   padding: 15px 30px;
+
+
+
+}
+
+section.about .abdeataile .text a:hover {
+   background-color: var(--havygreen);
+   box-shadow: 0px 0px 10px 1px #00e700af;
+   ;
+}
+
+
+section.about .abdeataile .imgae img {
+   width: 50%;
+   border-radius: 150px;
+   box-shadow: 0px 0px 20px 2px #00e700af;
+   ;
+   margin-bottom: 100px;
+}
+
+section.portfolio .text h1 {
+   font-size: 80px;}
+
+   swiper-container {
+      width: 440px;
+      height: 620px;
+   
+   
+   }
+
+   swiper-slide img {
+
+      width: 60%;
+      border-radius: 200px;
+   }
+
+   swiper-slide h1 {
+      color: #000;
+       font-size: 50px;
+   }
+   
+   swiper-slide p {
+      color: #000; font-size: 30px;
+   }
+   
+   swiper-slide h3 {
+      color: #000; font-size: 40px;
+   }
+   
+   swiper-slide hr {
+      color: #000;
+      width: 40%;
+      margin-bottom: 10px;
+   }
+
+   section.feedbacks .text {
+padding: 50px;
+   }
+
+   section.feedbacks .text h1 {
+      
+      font-size: 60px;
+   }
+   section.feedbacks .text p {
+      font-size: 30px;
+      width: 500px;
+   }
+   section.feedbacks .text a {
+      font-size: 40px;
+   }
+
+   section.foter p {
+      font-size: 40px;
+   
+   
+   }
+}
+
+   
+
