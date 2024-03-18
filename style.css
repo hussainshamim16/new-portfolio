@@ -202,6 +202,7 @@ div.icons i:hover {
    display: flex;
    align-items: center;
    justify-content: space-around;
+   flex-direction: row-reverse;
 
 }
 
@@ -701,8 +702,12 @@ section.foter p {
 @media only screen and (max-width: 600px) {
    body {
       background-color: #000;
+      width: auto;
    }
-
+nav{
+     
+   margin-bottom: 150px;
+}
    nav i {
       font-size: 40px;
 
@@ -717,32 +722,38 @@ section.foter p {
    }
 
    .twosec .main {
-      flex-direction: column-reverse;
+      flex-direction: column;
       text-align: center;
    }
 
    .twosec .main .image img {
-      width: 200px;
+      width: 180px;
       margin-bottom: 30px;
       margin-top: 20px;
    }
 
    .twosec .main p {
-      font-size: 13px;
+      font-size: 12px;
       width: auto;
    }
 
+   .twosec .main .text {
+      margin-bottom: 200px;
+   }
    .twosec .main h1 {
-      font-size: 40px;
+      font-size: 30px;
    }
 
    .twosec .main a {
-      padding: 12px 30px;
+      padding: 10px 20px;
+color: #003500;
+      
    }
 
    div.icons i {
       margin-bottom: 30px;
-      margin-top: 40px;
+      /* display: none; */
+      margin-left: 20px;
    }
 
    section.three .button {
@@ -751,11 +762,19 @@ section.foter p {
 
 
    }
+   div.boxer {
+      height: auto;
+      padding: 40px 30px;
+
+      margin-top: -140px;
+      
+   }
 
    section.three .button .box {
-      width: 60%;
+      width: 80%;
+      height: auto;
       flex-direction: column;
-      padding: 10px 20px;
+      padding: 30px 20px;
       margin-bottom: 40px;
       margin-top: 40px;
       margin-right: 0px;
@@ -766,15 +785,19 @@ section.foter p {
    section.three .button .box:first-child {
 
       background-color: var(--darkgreen);
-      width: 60%;
-      padding: 10px 20px;
+      width: 80%;
+      height: auto;
+      flex-direction: column;
+      padding: 30px 20px;
    }
 
    section.three .button .box:nth-of-type(4) {
 
       background-color: var(--darkgreen);
-      width: 60%;
-      padding: 10px 20px;
+      width: 80%;
+      height: auto;
+      flex-direction: column;
+      padding: 30px 20px;
    }
 
    section.blackN {
@@ -789,8 +812,8 @@ section.foter p {
 
    section.blackN p {
 
-      font-size: 8px;
-      width: 90px;
+      font-size: 7px;
+      width: 70px;
    }
 
    section.blackN .pera {
@@ -805,31 +828,38 @@ section.foter p {
 
    section.about .abdeataile .text {
       width: auto;
+      /* border: 1px solid red; */
+      padding: 10px 2px;
    }
 
+   section.about .abdeataile .text a {
+      padding: 10px 20px;
+      font-size: 13px;
+   }
 
    section.about .abdeataile .text sub {
       font-size: 20px;
+      padding: 0px;
    }
 
    section.about .abdeataile .text h1 {
-      font-size: 40px;
+      font-size: 30px;
       color: var(--havygreen);
 
    }
 
    section.about .abdeataile .text p {
-      font-size: 13px;
+      font-size: 12px;
       margin-bottom: 30px;
    }
 
    section.about .abdeataile .imgae img {
-      width: 30%;
+      width: 50%;
    }
 
 
    section.portfolio .boxes a {
-      width: 80%;
+      width: 90%;
    }
 
    section.portfolio .boxes {
@@ -850,26 +880,53 @@ section.foter p {
       flex-direction: column-reverse;
    }
 
-   .slider {
-      margin-bottom: 50px;
-   }
+   
 
    swiper-container {
-      width: 190px;
-      height: 300px;
+      display: none;
+   
+   
+   }
 
-
+   swiper-slide img {
+      width: 80%;
+      margin-bottom: 10px;
+      border-radius: 50px;
+   }
+   
+   swiper-slide h1 {
+      color: #000;
+      font-size: 14px;
+   }
+   
+   swiper-slide p {
+      color: #000;
+      font-size: 11px;
+   }
+   
+   swiper-slide h3 {
+      font-size: 12px;
+      color: #000;
+   }
+   
+   swiper-slide hr {
+      color: #000;
+      margin-top: 5px;
+      margin-bottom: 5px;
    }
 
    section.feedbacks .text {
-      width: 80%;
+      width: 70%;
+margin-top: -40px;
    }
    section.feedbacks .text p{
       width: 100%;
+      font-size: 12px;
    }
 
    section.foter p {
-      font-size: 100%;
+      font-size: 80%;
+      
    }
 }
 
