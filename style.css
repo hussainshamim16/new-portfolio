@@ -16,7 +16,8 @@
 body {
 
    width: 100%;
-   background-image: linear-gradient(rgba(0, 56, 14, 0.9), rgba(0, 0, 0, 0.9)), url('./images/background\ img.png');
+   /* background-image: linear-gradient(rgba(0, 56, 14, 0.9), rgba(0, 0, 0, 0.9)), url('./background\ gift.gif'); */
+   background-image: linear-gradient(rgba(0, 56, 14, 0.678), rgba(0, 0, 0, 0.527)), url('./background\ gift.gif');
 
 
    background-repeat: no-repeat;
